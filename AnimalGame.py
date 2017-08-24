@@ -23,9 +23,9 @@ pygame.display.set_caption("Cat Chase")
 # Setting variables for the images that will be used and loads images into them.
 # Converts image pixels to include alpha channels, allowing for the use of "png", "jpeg,
 # and other images files.
-Cat = pygame.image.load('C:\\Python\\Images\\BouncingGypTiny.png').convert_alpha()
-Dog = pygame.image.load('C:\\Python\\Images\\BouncingPupTiny.png').convert_alpha()
-Bckgrnd = pygame.image.load('C:\\Python\\Images\\dvdsnvle_ste_prk.jpg').convert_alpha()
+Cat = pygame.image.load('TinyCat.png').convert_alpha()
+Dog = pygame.image.load('TinyDog.png').convert_alpha()
+Bckgrnd = pygame.image.load('dvdsnvle_ste_prk.jpg').convert_alpha()
  
 # Defining event
 Bounce = True
@@ -132,7 +132,7 @@ while Bounce == True:
     Feline.rect.y = cat_pos_y #to the predefined cat position.
 
     Sprites_Roster.draw(screen)#Using the draw function every sprite grouped
-                               #together and placed in the sprites_roster
+                               #tiogether and placed in the sprites_roster
                                #container will be drawn.
 
     #Using the draw circle function; two circles are created defining what surface they will be drawn on,
@@ -169,12 +169,12 @@ while Bounce == True:
 
     if key_pos_y > 500 or key_pos_y < 0:
         spd_dir2_y = spd_dir2_y * -1
-    if key_pos_x > 900 or key_pos_x < 20:
+    if key_pos_x > 995 or key_pos_x < 20:
         spd_dir2_x = spd_dir2_x * -1
 
     if red_pos_y > 500 or red_pos_y < 0:
         spd_dir3_y = spd_dir3_y * -1
-    if red_pos_x > 900 or red_pos_x < 20:
+    if red_pos_x > 995 or red_pos_x < 20:
         spd_dir3_x = spd_dir3_x * -1
 
     # Using clock to set frames per second.
